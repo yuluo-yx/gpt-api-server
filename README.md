@@ -6,7 +6,7 @@
 
 ### docker 启动
 
-1. postman 中输入地址，请求类型为 post `http://ip:9876/question` ，设置请求体信息如下
+1. postman 中输入地址，请求类型为 post `http://ip:9876/question` ，设置请求体信息如下；
 
    ```json
    {
@@ -16,11 +16,13 @@
    }
    ```
 
-2. 确保本地代理正常可用，打开 `Allow WAN` 开关，确保局域网内设备可以正常访问
+2. 确保本地代理正常可用，打开 `Allow LAN` 开关，确保局域网内设备可以正常访问；
 
-3. 更改 `docker/app/application-docker.yml` 中的 `gpt.server.proxy-address` 为自己代理地址
+3. 更改 `docker/app/application-docker.yml` 中的 `gpt.service.proxy-address` 为自己代理地址；
 
-4. 进入 docker-compose,yml 所在文件夹，运行 `docker-compose up -d` 启动服务。
+4. 更改 `docker/app/application-docker.yml` 中的 `gpt.service.apikey` 为自己的 apikey ；
+
+5. 进入 docker-compose,yml 所在文件夹，运行 `docker-compose up -d` 启动服务。
 
 ### 本地启动
 
