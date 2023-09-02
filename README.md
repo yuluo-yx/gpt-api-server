@@ -18,7 +18,7 @@
    }
    ```
 
-2. 确保本地代理正常可用，`clash` 打开 `Allow LAN` 开关，确保局域网内设备可以正常访问；
+2. 确保本地代理正常可用，`clash` 打开 `Allow LAN` 开关，确保局域网内设备可以正常访问外网；
 
 3. 更改 `docker/app/application-docker.yml` 中的 `spring.gpt.service.proxy-address` 为自己代理地址；
 
@@ -28,10 +28,18 @@
 
 ### 本地启动
 
-先做 1.2 idea 打开项目，更改 1.3 中的配置项。启动 `主类` 即可。
+1. 确保本地代理正常可用，`clash` 打开 `Allow LAN` 开关，确保局域网内设备可以正常访问外网；
+
+2. 更改 `src/resource/application.yml` 中的 `spring.gpt.service.proxy-address` 为自己代理地址；
+
+3. 更改 `src/resource/application.yml` 中的 `spring.gpt.service.apikey` 为自己的 apikey ；
+
+4. 启动 `spring Boot` 项目主类；
+
+5. postman 访问接口测试。
 
 
 
-postman 调用效果展示：
+### postman 调用效果展示：
 
 <img src="./img/img.png">
