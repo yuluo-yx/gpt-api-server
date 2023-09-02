@@ -1,0 +1,11 @@
+server:
+  port: 9876
+
+spring:
+  application:
+    name: gpt_api_server
+
+  gpt:
+    service:
+      # 配置代理地址
+      proxy-address: 192.168.2.9
