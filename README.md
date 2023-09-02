@@ -18,7 +18,7 @@
    }
    ```
 
-2. 确保本地代理正常可用，打开 `Allow LAN` 开关，确保局域网内设备可以正常访问；
+2. 确保本地代理正常可用，`clash` 打开 `Allow LAN` 开关，确保局域网内设备可以正常访问；
 
 3. 更改 `docker/app/application-docker.yml` 中的 `spring.gpt.service.proxy-address` 为自己代理地址；
 
