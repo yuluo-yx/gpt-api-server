@@ -1,6 +1,7 @@
 ## GPT 接口服务
 
-> 使用 java 编写的 gpt api 接口服务
+> 使用 java 编写的 gpt api 接口服务 
+> <br>
 > JDK 17, Spring Boot 3.0.0
 
 ## 使用方法
