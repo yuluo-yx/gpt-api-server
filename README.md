@@ -30,9 +30,9 @@
 
 1. 确保本地代理正常可用，`clash` 打开 `Allow LAN` 开关，确保局域网内设备可以正常访问外网；
 
-2. 更改 `src/resource/application.yml` 中的 `spring.gpt.service.proxy-address` 为自己代理地址；
+2. 更改 `src/main/resources/application.yml` 中的 `spring.gpt.service.proxy-address` 为自己代理地址；
 
-3. 更改 `src/resource/application.yml` 中的 `spring.gpt.service.apikey` 为自己的 apikey ；
+3. 更改 `src/main/resources/application.yml` 中的 `spring.gpt.service.apikey` 为自己的 apikey ；
 
 4. 启动 `spring Boot` 项目主类；
 
