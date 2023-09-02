@@ -18,9 +18,9 @@
 
 2. 确保本地代理正常可用，打开 `Allow LAN` 开关，确保局域网内设备可以正常访问；
 
-3. 更改 `docker/app/application-docker.yml` 中的 `gpt.service.proxy-address` 为自己代理地址；
+3. 更改 `docker/app/application-docker.yml` 中的 `spring.gpt.service.proxy-address` 为自己代理地址；
 
-4. 更改 `docker/app/application-docker.yml` 中的 `gpt.service.apikey` 为自己的 apikey ；
+4. 更改 `docker/app/application-docker.yml` 中的 `spring.gpt.service.apikey` 为自己的 apikey ；
 
 5. 进入 docker-compose,yml 所在文件夹，运行 `docker-compose up -d` 启动服务。
 
